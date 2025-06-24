@@ -1,0 +1,20 @@
+/* Optional: Add shadow or spacing if desired */
+.progress {
+  background-color: #e9ecef;
+  color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.row{
+  color: #e9ecef;
+}
+.text-center{
+  color: #e9ecef;
+}
+.container{
+  height:100%;
+  width:100%;
+}
+.span.text-muted{
+  color:#e9ecef;
+}

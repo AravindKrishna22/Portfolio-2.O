@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #00111e, #003366);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections take full viewport height */
+section {
+  min-height: 100vh;
+  padding: 50px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Fix empty sections visibility */
+.about,
+.skills,
+.projects,
+.contact {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}

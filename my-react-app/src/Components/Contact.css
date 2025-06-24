@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.contact-section {
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  animation: bgFade 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgFade {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.contact-heading .highlight {
+  color: #4e8cff;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  max-width: 480px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.contact-list li:hover {
+  transform: translateX(6px);
+}
+
+.contact-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  word-break: break-word;
+}
+
+.contact-list a:hover {
+  color: #4e8cff;
+}
+
+.icon {
+  color: #4e8cff;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-name {
+    font-size: 1.5rem;
+  }
+
+  .contact-list li {
+    font-size: 0.95rem;
+  }
+}
