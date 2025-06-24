@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import profilePic from "../Images/profile.png";
+import profilePic from "../Images/Profile.png";
 import resume from "../Images/Resume.pdf"; // Correctly imported
 import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
