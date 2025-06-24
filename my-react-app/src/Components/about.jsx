@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import profilePic from "../Images/profile.png";
+import resume from "../Images/Resume.pdf"; // Correctly imported
 import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,26 +27,31 @@ function About() {
               <em>visually stunning</em> and <em>responsive</em> interfaces that
               engage users and deliver results.
             </p>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary mt-3"
+            >
+              View Resume
+            </a>
           </motion.div>
 
-     
-{/* Profile Image with frame layers */}
-<motion.div
-  className="col-md-6 text-center"
-  initial={{ x: 100, opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ duration: 1 }}
->
-  <div className="image-wrapper">
-    <img
-      src={profilePic}
-      alt="Profile"
-      className="img-fluid profile-pic"
-    />
-  </div>
-</motion.div>
-
-
+          {/* Profile Image */}
+          <motion.div
+            className="col-md-6 text-center"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="image-wrapper">
+              <img
+                src={profilePic}
+                alt="Profile"
+                className="img-fluid profile-pic"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
